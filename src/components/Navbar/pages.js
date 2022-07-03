@@ -1,3 +1,9 @@
-const pages = ["About", "RoadMap", "News", "WhitePaper", "Team"];
+import { useTranslation } from "react-i18next";
 
-export default pages;
+const Pages = () => {
+  const { t } = useTranslation(["common"]);
+
+  return [t("about"), t("roadmap"), t("news"), t("whitepaper"), t("team")];
+};
+
+export default Pages;

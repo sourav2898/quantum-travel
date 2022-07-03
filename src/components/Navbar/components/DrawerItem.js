@@ -12,7 +12,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import ConnectButton from "./ConnectButton";
 import SwitchLanguage from "./SwitchLanguage";
-import pages from "../pages";
+import pages from "../Pages";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const DrawerItem = ({ close }) => {
@@ -32,7 +32,7 @@ const DrawerItem = ({ close }) => {
       </Toolbar>
       <Divider />
       <List>
-        {pages?.map((text) => (
+        {pages()?.map((text) => (
           <ListItem key={text} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
               <ListItemText>
