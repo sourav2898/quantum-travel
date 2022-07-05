@@ -8,7 +8,7 @@ import ConnectButton from "./components/ConnectButton";
 import SwitchLanguage from "./components/SwitchLanguage";
 import { Drawer, Link } from "@mui/material";
 import DrawerItem from "./components/DrawerItem";
-import pages from "./Pages";
+import pages from "./components/Pages";
 import { useTranslation } from "react-i18next";
 import i18next from "i18next";
 

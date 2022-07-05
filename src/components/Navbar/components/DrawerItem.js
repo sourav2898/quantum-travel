@@ -12,7 +12,7 @@ import { Box } from "@mui/system";
 import React from "react";
 import ConnectButton from "./ConnectButton";
 import SwitchLanguage from "./SwitchLanguage";
-import pages from "../Pages";
+import pages from "./Pages";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 const DrawerItem = ({ close }) => {
