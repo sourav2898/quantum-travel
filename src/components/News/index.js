@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import meatverseVid from "../../assets/videos/trees1.mp4";
 import artGalleryVid from "../../assets/videos/trees2.mp4";
 import museumVid from "../../assets/videos/trees3.mp4";
+import newsImg from "../../assets/img/news_img1.png";
 
 const News = () => {
   const { t } = useTranslation(["news"]);
@@ -79,6 +80,51 @@ const News = () => {
             </Box>
           );
         })}
+      </Box>
+
+      {/* where metaverse */}
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+        mt={{ sm: 10, xs: 10, md: 20 }}
+        mb={{ sm: 5, xs: 5, md: 15 }}
+      >
+        <Box width={{ sm: "100%", md: "55%" }}>
+          <Typography sx={{ typography: { sm: "h3", xs: "h4" } }}>
+            {t("wheremetaverse")}
+          </Typography>
+          <Typography sx={{ typography: { sm: "h4", xs: "h5" } }}>
+            {t("wheremetaversetitle2")}
+          </Typography>
+          <Typography
+            component="p"
+            mt={{ xs: 2, sm: 2, md: 0 }}
+            sx={{
+              fontSize: "18px",
+              lineHeight: "1.85",
+            }}
+          >
+            {" "}
+            {t("wheremetaversedesc1")}{" "}
+          </Typography>
+          <Typography
+            component="p"
+            sx={{
+              fontSize: "18px",
+              lineHeight: "1.85",
+            }}
+          >
+            {" "}
+            {t("wheremetaversedesc2")}{" "}
+          </Typography>
+        </Box>
+        <Box width={{ sm: "100%", md: "40%" }} mt={{ xs: 5, md: 0 }}>
+          <img width="100%" height="100%" src={newsImg} alt="home" />
+        </Box>
       </Box>
     </Container>
   );
