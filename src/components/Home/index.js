@@ -2,24 +2,14 @@ import React from "react";
 import { Box, Typography, Container, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import homeImg from "../../assets/img/home_img.jpg";
+import SpanTitle from "../Common/SpanTitle";
 
 const Home = () => {
   const { t } = useTranslation(["home"]);
   return (
-    <Container id="#home" sx={{ color: "#fff", marginBottom: 5 }}>
+    <Container id="home" sx={{ color: "#fff" }}>
       {/* Quantum Metaverse */}
-      <Box sx={{ display: "flex", alignItems: "center" }}>
-        <Box
-          mr={1}
-          sx={{
-            width: "5%",
-            height: "1px",
-            backgroundColor: "#fff",
-            borderRadius: "10%",
-          }}
-        />
-        <Typography variant="p">{t("quantummetaverse")}</Typography>
-      </Box>
+      <SpanTitle title={t("quantummetaverse")} />
       <Box
         sx={{
           display: "flex",
