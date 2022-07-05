@@ -45,10 +45,10 @@ const News = () => {
         }}
         mt={2}
       >
-        {list?.map((val) => {
+        {list?.map((val, index) => {
           return (
             <Box
-              key={val}
+              key={index}
               sx={{ width: { sm: "100%", xs: "100%", md: "40%" } }}
               mb={3}
             >
