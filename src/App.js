@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import { Box } from "@mui/material";
 import About from "./components/About";
 import News from "./components/News";
+import RoadMap from "./components/RoadMap";
+import Team from "./components/Team";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Home />
           <About />
           <News />
+          <RoadMap />
+          <Team />
         </Box>
       </div>
     </Suspense>
