@@ -7,6 +7,8 @@ import About from "./components/About";
 import News from "./components/News";
 import RoadMap from "./components/RoadMap";
 import Team from "./components/Team";
+import Partners from "./components/Partners";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <News />
           <RoadMap />
           <Team />
+          <Partners />
+          <ContactUs />
         </Box>
       </div>
     </Suspense>
