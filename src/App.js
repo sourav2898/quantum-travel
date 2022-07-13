@@ -9,6 +9,7 @@ import RoadMap from "./components/RoadMap";
 import Team from "./components/Team";
 import Partners from "./components/Partners";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Partners />
           <ContactUs />
         </Box>
+        <Footer />
       </div>
     </Suspense>
   );
