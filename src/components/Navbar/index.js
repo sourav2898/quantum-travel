@@ -10,7 +10,7 @@ import { Drawer, Link } from "@mui/material";
 import DrawerItem from "./components/DrawerItem";
 import pages from "./components/Pages";
 import { useTranslation } from "react-i18next";
-import i18next from "i18next";
+import logo from "../../assets/img/logo.png";
 
 const drawerWidth = 240;
 
@@ -37,9 +37,9 @@ const Navbar = () => {
           edge="start"
           color="inherit"
           aria-label="menu"
-          sx={{ mr: 2 }}
+          sx={{ mr: 2, width: { xs: 100, sm: 150, md: 200 } }}
         >
-          Quantum
+          <img width="100%" src={logo} alt="logo" />
         </IconButton>
         <Box
           sx={{
