@@ -103,6 +103,7 @@ const News = () => {
             {t("wheremetaversetitle2")}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 0 }}
             sx={{
@@ -114,6 +115,7 @@ const News = () => {
             {t("wheremetaversedesc1")}{" "}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             sx={{
               fontSize: "18px",
@@ -151,6 +153,7 @@ const News = () => {
             {t("nftsecondarytitle1").toUpperCase()}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 0 }}
             mb={{ xs: 2, sm: 2, md: 5 }}
@@ -164,6 +167,7 @@ const News = () => {
           </Typography>
           <SpanTitle title={t("nftspantitle1")} />
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 5 }}
             sx={{
@@ -198,6 +202,7 @@ const News = () => {
             {t("nftsecondarytitle1").toUpperCase()}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 0 }}
             mb={{ xs: 2, sm: 2, md: 5 }}
@@ -214,6 +219,7 @@ const News = () => {
           {[1, 2, 3].map((value, index) => {
             return (
               <Typography
+                variant="description"
                 key={value + index}
                 component="p"
                 mt={value === 1 ? { xs: 2, sm: 2, md: 5 } : 2}
@@ -233,8 +239,10 @@ const News = () => {
           })}
         </Box>
       </Box>
+
       <Box mb={{ sm: 5, xs: 5, md: 15 }}>
         <Typography
+          variant="description"
           component="p"
           mt={{ xs: 2, sm: 2, md: 5 }}
           sx={{
@@ -247,6 +255,7 @@ const News = () => {
           {t(`details1`)}{" "}
         </Typography>
         <Typography
+          variant="description"
           component="p"
           mt={{ xs: 2, sm: 2, md: 5 }}
           sx={{
@@ -255,6 +264,7 @@ const News = () => {
           }}
         >
           <Link
+            variant="description"
             href="https://opensea.io/Quantum-Museum"
             target="_blank"
             sx={{ textDecoration: "none", color: "inherit", cursor: "pointer" }}
@@ -266,6 +276,7 @@ const News = () => {
           {t(`details2`)}{" "}
         </Typography>
         <Typography
+          variant="description"
           component="p"
           mt={{ xs: 2, sm: 2, md: 5 }}
           sx={{

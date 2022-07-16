@@ -13,7 +13,7 @@ const SpanTitle = ({ title }) => {
           borderRadius: "10%",
         }}
       />
-      <Typography variant="p">{title}</Typography>
+      <Typography variant="spanTitle">{title}</Typography>
     </Box>
   );
 };

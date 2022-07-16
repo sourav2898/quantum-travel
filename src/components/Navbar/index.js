@@ -61,6 +61,7 @@ const Navbar = () => {
           >
             {pages()?.map((page) => (
               <Link
+                variant="spanTitle"
                 href={`#${page.toLowerCase()}`}
                 key={page}
                 sx={{

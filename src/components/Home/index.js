@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Container, Button } from "@mui/material";
+import { Box, Typography, Container, Button, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import homeImg from "../../assets/img/home_img.jpg";
 import SpanTitle from "../Common/SpanTitle";
@@ -20,10 +20,16 @@ const Home = () => {
         mt={2}
       >
         <Box width={{ sm: "100%", md: "50%" }}>
-          <Typography sx={{ typography: { sm: "h3", xs: "h4" } }}>
+          <Typography
+            variant="title"
+            sx={{
+              typography: { sm: "h3", xs: "h4" },
+            }}
+          >
             {t("title")}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 5 }}
             sx={{

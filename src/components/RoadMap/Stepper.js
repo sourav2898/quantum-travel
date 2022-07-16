@@ -79,7 +79,10 @@ const Stepper = ({ steps }) => {
                 {" "}
                 {value?.label}
               </Typography>
-              <Typography> {value?.description}</Typography>
+              <Typography variant="description">
+                {" "}
+                {value?.description}
+              </Typography>
             </Box>
           </Box>
         );

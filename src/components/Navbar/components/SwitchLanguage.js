@@ -30,7 +30,7 @@ const SwitchLanguage = ({ color }) => {
       onClick={() => handleLanguageChange(lang === "EN" ? "ES" : "EN")}
     >
       <LanguageIcon />
-      <Typography p={0} m={0}>
+      <Typography variant="spanTitle" p={0} m={0}>
         {lang === "EN" ? "ES" : "EN"}
       </Typography>
     </Box>

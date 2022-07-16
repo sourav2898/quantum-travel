@@ -58,8 +58,8 @@ const Team = () => {
                   width: 180,
                 }}
               >
-                <Typography>{value?.name}</Typography>
-                <Typography color="aliceblue" mb={3}>
+                <Typography variant="title">{value?.name}</Typography>
+                <Typography variant="secTitle" color="aliceblue" mb={3}>
                   {value?.designation}
                 </Typography>
                 <Box sx={{ display: "flex" }}>

@@ -31,6 +31,7 @@ const About = () => {
             {t("title")}
           </Typography>
           <Typography
+            variant="description"
             component="p"
             mt={{ xs: 2, sm: 2, md: 0 }}
             sx={{

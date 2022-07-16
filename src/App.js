@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense } from "react";
 import "./App.css";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -10,22 +10,41 @@ import Team from "./components/Team";
 import Partners from "./components/Partners";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
+import { ThemeProvider, createTheme, useTheme } from "@mui/material/styles";
 
 function App() {
+  const tittleFont = '"Lakki Reddy", cursive';
+  const descFont = "Josefin Sans";
+  const spanTitleFont = "Inconsolata";
+  const secondaryTitleFont = "Merienda";
+  const theme = createTheme({
+    typography: {
+      title: { fontFamily: tittleFont },
+      h4: { fontFamily: tittleFont },
+      h3: { fontFamily: tittleFont },
+      h5: { fontFamily: secondaryTitleFont },
+      h6: { fontFamily: secondaryTitleFont },
+      description: { fontFamily: descFont },
+      sectitle: { fontFamily: secondaryTitleFont },
+      spanTitle: { fontFamily: spanTitleFont },
+    },
+  });
   return (
     <Suspense fallback={null}>
       <div className="App">
-        <Navbar />
-        <Box p={{ sm: 1, xs: 1, md: 2 }} m={{ sm: 0, xs: 0, md: 2 }}>
-          <Home />
-          <About />
-          <News />
-          <RoadMap />
-          <Team />
-          <Partners />
-          <ContactUs />
-        </Box>
-        <Footer />
+        <ThemeProvider theme={theme}>
+          <Navbar />
+          <Box p={{ sm: 1, xs: 1, md: 2 }} m={{ sm: 0, xs: 0, md: 2 }}>
+            <Home />
+            <About />
+            <News />
+            <RoadMap />
+            <Team />
+            <Partners />
+            <ContactUs />
+          </Box>
+          <Footer />
+        </ThemeProvider>
       </div>
     </Suspense>
   );
