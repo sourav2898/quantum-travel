@@ -11,6 +11,7 @@ const SwitchLanguage = ({ color }) => {
   useEffect(() => {
     i18n.changeLanguage("en");
   }, []);
+
   const handleLanguageChange = (lang = "en") => {
     // console.log(lang);
     setLang(lang);

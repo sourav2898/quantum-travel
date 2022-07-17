@@ -62,7 +62,7 @@ const About = () => {
           <Typography sx={{ typography: { sm: "h3", xs: "h4" } }}>
             {t("quantummetaverse")}
           </Typography>
-          <Typography sx={{ typography: { sm: "h3", xs: "h4" } }}>
+          <Typography sx={{ typography: { sm: "h5", xs: "h6" } }}>
             {t("metaversedesc")}
           </Typography>
           <Typography

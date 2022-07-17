@@ -28,7 +28,7 @@ const Navbar = () => {
       position="sticky"
       elevation={4}
       sx={{
-        backgroundColor: "rgba(0,0,0,.3)",
+        backgroundColor: "rgba(0,0,0,.6)",
       }}
     >
       <Toolbar>

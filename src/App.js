@@ -24,7 +24,11 @@ function App() {
       h3: { fontFamily: tittleFont },
       h5: { fontFamily: secondaryTitleFont },
       h6: { fontFamily: secondaryTitleFont },
-      description: { fontFamily: descFont },
+      description: {
+        fontFamily: descFont,
+        fontWeight: "600",
+        color: "#AAB2CD",
+      },
       sectitle: { fontFamily: secondaryTitleFont },
       spanTitle: { fontFamily: spanTitleFont },
     },
