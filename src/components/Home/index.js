@@ -3,6 +3,8 @@ import { Box, Typography, Container, Button, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import homeImg from "../../assets/img/home_img.jpg";
 import SpanTitle from "../Common/SpanTitle";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
   const { t } = useTranslation(["home"]);
@@ -19,7 +21,7 @@ const Home = () => {
         }}
         mt={2}
       >
-        <Box width={{ sm: "100%", md: "50%" }}>
+        <Box width={{ sm: "100%", md: "50%" }} data-aos="fade-right">
           <Typography
             variant="title"
             sx={{
@@ -70,7 +72,11 @@ const Home = () => {
             {t("whitepaper")}
           </Button>
         </Box>
-        <Box width={{ sm: "100%", md: "45%" }} mt={{ xs: 5, md: 0 }}>
+        <Box
+          width={{ sm: "100%", md: "45%" }}
+          mt={{ xs: 5, md: 0 }}
+          data-aos="fade-left"
+        >
           <img width="100%" height="100%" src={homeImg} alt="home" />
         </Box>
       </Box>

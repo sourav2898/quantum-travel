@@ -105,7 +105,10 @@
   height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: rgb(105, 44, 44);
+  background: url(./assets/img/bg_img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 ::-webkit-scrollbar{

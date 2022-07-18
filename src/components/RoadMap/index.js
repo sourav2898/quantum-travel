@@ -3,6 +3,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import roadMapImg from "../../assets/img/roadmap.png";
 import Stepper from "./Stepper";
+import bgImg from "../../assets/img/roadMap_bg_img.png";
 
 const RoadMap = () => {
   const { t } = useTranslation(["roadmap"]);
@@ -91,18 +92,32 @@ const RoadMap = () => {
       >
         {t("roadmap")}
       </Typography>
-      <img width="100%" src={roadMapImg} alt="roadmap" />
       <Box
         sx={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          marginTop: 5,
+          backgroundImage: `url(${bgImg})`,
+          // backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
         }}
       >
-        <Stepper steps={steps[t("steps")]} />
+        <img
+          width="100%"
+          src={roadMapImg}
+          alt="roadmap"
+          style={{ opacity: 0.7 }}
+        />
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+            marginTop: 5,
+          }}
+        >
+          <Stepper steps={steps[t("steps")]} />
+        </Box>
       </Box>
     </Container>
   );

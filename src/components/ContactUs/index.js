@@ -1,6 +1,7 @@
 import { Box, Button, Container, InputBase, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import bgImg from "../../assets/img/contact-bg.png";
 
 const ContactUs = () => {
   const { t } = useTranslation(["contactus"]);
@@ -12,6 +13,10 @@ const ContactUs = () => {
         marginBottom: { sm: 2, xs: 1, md: 5 },
         paddingTop: { sm: 3, xs: 3, md: 20 },
         textAlign: "center",
+        backgroundImage: `url(${bgImg})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        // backgroundSize: "cover",
       }}
     >
       <Typography variant="p"> {t("span")} </Typography>

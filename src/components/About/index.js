@@ -1,8 +1,9 @@
 import { Box, Container, Typography } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import aboutImg from "../../assets/img/about_img.png";
 import SpanTitle from "../Common/SpanTitle";
+import bgImg from "../../assets/img/news_bg.png";
 
 const About = () => {
   const { t } = useTranslation(["about"]);
@@ -14,6 +15,10 @@ const About = () => {
         color: "#fff",
         marginBottom: { sm: 2, xs: 1, md: 5 },
         paddingTop: { sm: 3, xs: 3, md: 20 },
+        backgroundImage: `url(${bgImg})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
       }}
     >
       <Box

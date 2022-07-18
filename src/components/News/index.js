@@ -10,6 +10,7 @@ import nft1 from "../../assets/img/nft1.jpg";
 import nft2 from "../../assets/img/nft2.jpg";
 import SpanTitle from "../Common/SpanTitle";
 import CheckIcon from "@mui/icons-material/Check";
+import bgImf from "../../assets/img/news_bg.png";
 
 const News = () => {
   const { t } = useTranslation(["news"]);

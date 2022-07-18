@@ -7,6 +7,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Twitter } from "@mui/icons-material";
 import teamList from "./teamList";
+import bgImg from "../../assets/img/team-bg.png";
 
 const Team = () => {
   const { t } = useTranslation(["team"]);
@@ -17,6 +18,10 @@ const Team = () => {
         color: "#fff",
         marginBottom: { sm: 2, xs: 1, md: 5 },
         paddingTop: { sm: 3, xs: 3, md: 20 },
+        backgroundImage: `url(${bgImg})`,
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        // backgroundSize: "cover",
       }}
     >
       <SpanTitle title="Our Brain" />

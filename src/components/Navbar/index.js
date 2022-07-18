@@ -28,10 +28,10 @@ const Navbar = () => {
       position="sticky"
       elevation={4}
       sx={{
-        backgroundColor: "rgba(0,0,0,.6)",
+        backgroundColor: "rgba(0,0,0,.4)",
       }}
     >
-      <Toolbar>
+      <Toolbar data-aos="fade-down">
         <IconButton
           size="small"
           edge="start"
