@@ -53,7 +53,7 @@ const Stepper = ({ steps }) => {
                   sx={{
                     width: 2,
                     backgroundColor: "blue",
-                    minHeight: { md: 300, sm: 280, xs: 250 },
+                    height: { md: 150, sm: 220, xs: 220 },
                   }}
                 />
               )}
