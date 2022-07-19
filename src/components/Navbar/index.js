@@ -32,15 +32,23 @@ const Navbar = () => {
       }}
     >
       <Toolbar data-aos="fade-down">
-        <IconButton
-          size="small"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2, width: { xs: 100, sm: 150, md: 200 } }}
+        <Link
+          href="#home"
+          sx={{
+            textDecoration: "none",
+            color: "#fff",
+          }}
         >
-          <img width="100%" src={logo} alt="logo" />
-        </IconButton>
+          <IconButton
+            size="small"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2, width: { xs: 100, sm: 150, md: 200 } }}
+          >
+            <img width="100%" src={logo} alt="logo" />
+          </IconButton>
+        </Link>
         <Box
           sx={{
             display: "flex",
@@ -62,7 +70,12 @@ const Navbar = () => {
             {pages()?.map((page) => (
               <Link
                 variant="spanTitle"
-                href={`#${page.toLowerCase()}`}
+                target={`${page === "WhitePaper" ? "_blank" : ""}`}
+                href={`${
+                  page === "WhitePaper"
+                    ? "https://firebasestorage.googleapis.com/v0/b/quantummuseum-c3312.appspot.com/o/whitepaper%2FOPEN%20GAMES%20WHITEPAPER%201.0.pdf?alt=media&token=fee11190-3108-4ee3-897b-b68957dcdc32"
+                    : "#" + page.toLowerCase()
+                }`}
                 key={page}
                 sx={{
                   m: 2,

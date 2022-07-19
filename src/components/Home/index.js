@@ -1,5 +1,12 @@
 import React from "react";
-import { Box, Typography, Container, Button, useTheme } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Container,
+  Button,
+  useTheme,
+  Link,
+} from "@mui/material";
 import { useTranslation } from "react-i18next";
 import homeImg from "../../assets/img/home_img.jpg";
 import SpanTitle from "../Common/SpanTitle";
@@ -42,35 +49,57 @@ const Home = () => {
             {" "}
             {t("desc")}{" "}
           </Typography>
-
-          <Button
-            fullWidth
-            variant="contained"
+          <Link
+            href="#"
             sx={{
-              margin: "20px 0 10px",
-              height: 50,
-              backgroundColor: "#ed824e",
-              "&:hover": {
+              textDecoration: "none",
+              color: "#fff",
+            }}
+          >
+            <Button
+              fullWidth
+              variant="contained"
+              sx={{
+                margin: "20px 0 10px",
+                height: 50,
                 backgroundColor: "#ed824e",
-              },
-            }}
-          >
-            {t("gotoapp")}
-          </Button>
-          <Button
-            fullWidth
-            variant="contained"
+                border: "2px solid transparent",
+                transition: "all .3s ease",
+                "&:hover": {
+                  backgroundColor: "#ed824e",
+                  boxShadow: "0 3px 32px #ec75518a",
+                },
+              }}
+            >
+              {t("gotoapp")}
+            </Button>
+          </Link>
+          <Link
+            href="https://quantum-metaverse.gitbook.io/quantum-english-1/"
+            target="_blank"
             sx={{
-              margin: "5px 0",
-              height: 50,
-              backgroundColor: "#00cde4",
-              "&:hover": {
-                backgroundColor: "#00cde4",
-              },
+              textDecoration: "none",
+              color: "#fff",
             }}
           >
-            {t("whitepaper")}
-          </Button>
+            <Button
+              fullWidth
+              variant="contained"
+              sx={{
+                margin: "5px 0",
+                height: 50,
+                backgroundColor: "#00cde4",
+                border: "2px solid transparent",
+                transition: "all .3s ease",
+                "&:hover": {
+                  backgroundColor: "#00cde4",
+                  boxShadow: "0 3px 32px #00e7ea8a",
+                },
+              }}
+            >
+              {t("whitepaper")}
+            </Button>
+          </Link>
         </Box>
         <Box
           width={{ sm: "100%", md: "45%" }}

@@ -83,8 +83,11 @@ const ContactUs = () => {
             height: 50,
             width: { sm: "100%", xs: "100%", md: "60%" },
             backgroundColor: "#ed824e",
+            border: "2px solid transparent",
+            transition: "all .3s ease",
             "&:hover": {
               backgroundColor: "#ed824e",
+              boxShadow: "0 3px 32px #ec75518a",
             },
           }}
         >

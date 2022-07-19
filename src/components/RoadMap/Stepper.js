@@ -42,7 +42,7 @@ const Stepper = ({ steps }) => {
                   width: 20,
                   height: 20,
                   borderRadius: "50%",
-                  border: "2px solid blue",
+                  border: "2px solid #00cde4",
                   backgroundColor: "black",
                   marginBottom: 0,
                   padding: 0,
@@ -52,7 +52,7 @@ const Stepper = ({ steps }) => {
                 <Box
                   sx={{
                     width: 2,
-                    backgroundColor: "blue",
+                    backgroundColor: "#00cde4",
                     height: { md: 150, sm: 220, xs: 220 },
                   }}
                 />
@@ -62,7 +62,7 @@ const Stepper = ({ steps }) => {
               sx={{
                 width: { md: 150, sm: 60, xs: 60 },
                 height: 2,
-                backgroundColor: "blue",
+                backgroundColor: "#00cde4",
                 marginRight: 2,
                 marginTop: 1,
               }}
