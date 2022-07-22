@@ -99,14 +99,13 @@ const RoadMap = () => {
           // backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           // backgroundSize: "cover",
-          opacity: 0.5,
         }}
       >
         <img
           width="100%"
           src={roadMapImg}
           alt="roadmap"
-          style={{ opacity: 0.7 }}
+          style={{ opacity: 0.9 }}
         />
         <Box
           sx={{

@@ -35,10 +35,14 @@ const ContactUs = () => {
             width: { sm: "100%", xs: "100%", md: "60%" },
             color: "#999",
             fontWeight: "500",
-            border: "1px solid lightgray",
+            border: "1px solid transparent",
             borderRadius: 1,
             padding: 2,
-            background: "#fff",
+            background: "#272f4c",
+            transition: "all .3s ease",
+            "&:focus-within": {
+              backgroundColor: "#fff",
+            },
           }}
         />
         <InputBase
@@ -51,10 +55,14 @@ const ContactUs = () => {
             width: { sm: "100%", xs: "100%", md: "60%" },
             color: "#999",
             fontWeight: "500",
-            border: "1px solid lightgray",
+            border: "1px solid transparent",
             borderRadius: 1,
             padding: 2,
-            background: "#fff",
+            background: "#272f4c",
+            transition: "all .3s ease",
+            "&:focus-within": {
+              backgroundColor: "#fff",
+            },
           }}
         />
         <InputBase
@@ -69,10 +77,14 @@ const ContactUs = () => {
             width: { sm: "100%", xs: "100%", md: "60%" },
             color: "#999",
             fontWeight: "500",
-            border: "1px solid lightgray",
+            border: "1px solid transparent",
             borderRadius: 1,
             padding: 2,
-            background: "#fff",
+            background: "#272f4c",
+            transition: "all .3s ease",
+            "&:focus-within": {
+              backgroundColor: "#fff",
+            },
           }}
         />
 

@@ -40,6 +40,7 @@ const News = () => {
       <Typography sx={{ typography: { sm: "h3", xs: "h4" } }}>
         {t("threepilars")}
       </Typography>
+      {/* three pillars */}
       <Box
         sx={{
           display: "flex",
@@ -53,7 +54,20 @@ const News = () => {
           return (
             <Box
               key={index}
-              sx={{ width: { sm: "100%", xs: "100%", md: "40%" } }}
+              sx={{
+                width: { sm: "30%", xs: "100%", md: "30%" },
+                borderRight: {
+                  sm: `${
+                    index !== list.length - 1 ? " 5px outset orange" : "none"
+                  }`,
+                  xs: "none",
+                  md: `${
+                    index !== list.length - 1 ? "5px outset orange" : "none"
+                  }`,
+                },
+                borderRadius: 2,
+              }}
+              pb={2}
               mb={3}
             >
               <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -77,7 +91,7 @@ const News = () => {
                   {val?.title.toUpperCase()}
                 </Typography>
               </Box>
-              <video style={{ marginTop: 10 }} width={"100%"} autoPlay muted>
+              <video style={{ marginTop: 10 }} width={"90%"} autoPlay muted>
                 <source src={val?.video} type="video/mp4" />
               </video>
             </Box>
